@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEET College Predictor - Find Your Dream Medical College</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cursor Sparks Container -->
+    <div id="cursor-sparks"></div>
+
+    <!-- Theme Toggle Button -->
+    <div class="theme-toggle-wrapper">
+        <button class="theme-toggle-btn" id="themeToggle" title="Toggle Dark/Light Mode">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+        </button>
+    </div>
+
+    <!-- Animated Background Shapes -->
+    <div class="bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        <div class="shape shape-5"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo" data-aos="fade-right">
+                <div class="logo-icon">
+                    <i class="fas fa-heartbeat"></i>
+                </div>
+                <span>MediPredict</span>
+            </div>
+            <ul class="nav-menu" data-aos="fade-down" data-aos-delay="100">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#why-us" class="nav-link">Why Us</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="btn-login" data-aos="fade-left" data-aos-delay="200">
+                <span>Login</span>
+                <i class="fas fa-arrow-right"></i>
+            </button>
+            <div class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <canvas id="particles-canvas"></canvas>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge" data-aos="zoom-in">
+                    <i class="fas fa-star"></i>
+                    <span>India's #1 NEET College Predictor</span>
+                </div>
+                
+                <h1 data-aos="fade-up" data-aos-delay="100">
+                    Find Your Dream
+                    <span class="gradient-text-animated">Medical College</span>
+                </h1>
+                
+                <p data-aos="fade-up" data-aos-delay="200">
+                    Get instant, accurate predictions for <span class="highlight-animated">776+ medical colleges</span> 
+                    across India based on your NEET rank
+                </p>
+            </div>
+
+            <!-- Prediction Form -->
+            <div class="prediction-form-container" data-aos="fade-up" data-aos-delay="300">
+                <div class="form-header">
+                    <h2>
+                        <i class="fas fa-search icon-bounce"></i> 
+                        Predict Your Colleges Now
+                    </h2>
+                    <p>Enter your details below to discover colleges matching your NEET score</p>
+                </div>
+
+                <form class="prediction-form" id="predictForm">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label><i class="fas fa-university"></i> Counselling Authority</label>
+                            <select id="authority" required>
+                                <option value="">--Select--</option>
+                                <option value="MCC">Medical Counselling Committee India</option>
+                                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                <option value="Assam">Assam</option>
+                                <option value="Bihar">Bihar</option>
+                                <option value="Chhattisgarh">Chhattisgarh</option>
+                                <option value="Delhi">Delhi</option>
+                                <option value="Gujarat">Gujarat</option>
+                                <option value="Haryana">Haryana</option>
+                                <option value="Karnataka">Karnataka</option>
+                                <option value="Maharashtra">Maharashtra</option>
+                                <option value="Rajasthan">Rajasthan</option>
+                                <option value="Tamil Nadu">Tamil Nadu</option>
+                                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                <option value="West Bengal">West Bengal</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label><i class="fas fa-graduation-cap"></i> Course Type</label>
+                            <select id="course" required>
+                                <option value="">Select course type</option>
+                                <option value="MBBS">MBBS</option>
+                                <option value="BDS">BDS</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label><i class="fas fa-trophy"></i> Rank Type</label>
+                            <select id="rankType" required>
+                                <option value="">Select rank type</option>
+                                <option value="AIR">AIR (All India Rank)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label><i class="fas fa-list"></i> Quota</label>
+                            <select id="quota" required>
+                                <option value="">Select quota</option>
+                                <option value="All India Quota">All India Quota</option>
+                                <option value="State Quota">State Quota</option>
+                                <option value="Deemed University">Deemed University</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label><i class="fas fa-user-tag"></i> Category</label>
+                            <select id="category" required>
+                                <option value="">Select category</option>
+                                <option value="Unreserved">Unreserved (General)</option>
+                                <option value="EWS">EWS</option>
+                                <option value="OBC">OBC</option>
+                                <option value="SC">SC</option>
+                                <option value="ST">ST</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label><i class="fas fa-venus-mars"></i> Gender</label>
+                            <select id="gender" required>
+                                <option value="">--Select--</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label><i class="fas fa-hashtag"></i> All India Rank (AIR)</label>
+                            <input type="number" id="rank" placeholder="Enter your NEET AIR" required min="1" max="2000000">
+                        </div>
+
+                        <div class="form-group">
+                            <label><i class="fas fa-map-marker-alt"></i> Domicile State</label>
+                            <select id="domicile">
+                                <option value="">Select state (Optional)</option>
+                                <option value="Bihar">Bihar</option>
+                                <option value="Delhi">Delhi</option>
+                                <option value="Maharashtra">Maharashtra</option>
+                                <option value="Karnataka">Karnataka</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-predict">
+                        <span class="btn-text">Predict My Colleges</span>
+                        <span class="btn-icon"><i class="fas fa-brain"></i></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="results-section" id="resultsSection">
+        <div class="container">
+            <div class="results-container">
+                <div class="results-header" data-aos="fade-down">
+                    <h3><i class="fas fa-list-check"></i> Your Predicted Colleges</h3>
+                    <button class="btn-download">
+                        <i class="fas fa-download"></i> Download Report
+                    </button>
+                </div>
+                <div id="collegeResults"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Why Students Trust Us</h2>
+                <p class="section-subtitle">Proven track record of helping thousands of students</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card" data-aos="flip-left" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Advanced Algorithm</h3>
+                    <p>5 years of historical data with 95%+ accuracy</p>
+                </div>
+
+                <div class="feature-card" data-aos="flip-left" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Instant Results</h3>
+                    <p>Get predictions in less than 1 second</p>
+                </div>
+
+                <div class="feature-card" data-aos="flip-left" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>100% Free & Secure</h3>
+                    <p>Your data is encrypted and never shared</p>
+                </div>
+
+                <div class="feature-card" data-aos="flip-left" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Comprehensive Data</h3>
+                    <p>776+ medical colleges coverage</p>
+                </div>
+
+                <div class="feature-card" data-aos="flip-left" data-aos-delay="500">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Round-Wise Analysis</h3>
+                    <p>All counselling rounds covered</p>
+                </div>
+
+                <div class="feature-card" data-aos="flip-left" data-aos-delay="600">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Friendly</h3>
+                    <p>Works on all devices seamlessly</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section id="why-us" class="why-us-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Why MediPredict is the Best</h2>
+                <p class="section-subtitle">Join thousands of successful students</p>
+            </div>
+
+            <div class="why-us-grid">
+                <div class="why-us-item" data-aos="fade-right">
+                    <div class="why-us-icon"><i class="fas fa-check-circle"></i></div>
+                    <div class="why-us-content">
+                        <h3>Verified Historical Data</h3>
+                        <p>Official data from 2020-2024</p>
+                    </div>
+                </div>
+
+                <div class="why-us-item" data-aos="fade-left">
+                    <div class="why-us-icon"><i class="fas fa-users"></i></div>
+                    <div class="why-us-content">
+                        <h3>Expert Mentorship</h3>
+                        <p>Connect with top college seniors</p>
+                    </div>
+                </div>
+
+                <div class="why-us-item" data-aos="fade-right">
+                    <div class="why-us-icon"><i class="fas fa-sync"></i></div>
+                    <div class="why-us-content">
+                        <h3>Regular Updates</h3>
+                        <p>Latest cutoff trends daily</p>
+                    </div>
+                </div>
+
+                <div class="why-us-item" data-aos="fade-left">
+                    <div class="why-us-icon"><i class="fas fa-headset"></i></div>
+                    <div class="why-us-content">
+                        <h3>24/7 Support</h3>
+                        <p>Always here to help you</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card" data-aos="zoom-in">
+                    <div class="stat-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="stat-number counter" data-target="776">0</div>
+                    <div class="stat-label">Medical Colleges</div>
+                </div>
+                <div class="stat-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="stat-icon"><i class="fas fa-users"></i></div>
+                    <div class="stat-number counter" data-target="15000">0</div>
+                    <div class="stat-label">Students Helped</div>
+                </div>
+                <div class="stat-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="stat-icon"><i class="fas fa-chart-line"></i></div>
+                    <div class="stat-number counter" data-target="95">0</div>
+                    <div class="stat-label">Accuracy %</div>
+                </div>
+                <div class="stat-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="stat-icon"><i class="fas fa-clock"></i></div>
+                    <div class="stat-number counter" data-target="5">0</div>
+                    <div class="stat-label">Years Data</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-left" data-aos="fade-right">
+                    <h2>About MediPredict</h2>
+                    <p>India's most trusted NEET college predictor platform, founded with a mission to simplify medical college admissions.</p>
+                    <div class="about-features">
+                        <div class="about-feature"><i class="fas fa-check"></i> Founded in 2020</div>
+                        <div class="about-feature"><i class="fas fa-check"></i> 15,000+ Students</div>
+                        <div class="about-feature"><i class="fas fa-check"></i> 95%+ Accuracy</div>
+                        <div class="about-feature"><i class="fas fa-check"></i> 776+ Colleges</div>
+                    </div>
+                </div>
+                <div class="about-right" data-aos="fade-left">
+                    <img src="image.jpg" alt="AIIMS Medical College" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22500%22 height=%22400%22%3E%3Crect fill=%22%23667eea%22 width=%22500%22 height=%22400%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-size=%2260%22 text-anchor=%22middle%22 fill=%22white%22 dy=%22.3em%22%3EAIIMS Delhi%3C/text%3E%3C/svg%3E'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">We'd love to hear from you</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-left" data-aos="fade-right">
+                    <div class="contact-info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>Bihar Sharif, Bihar, India</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 98765 43210</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>support@medipredict.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm" data-aos="fade-left">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn-submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3><i class="fas fa-heartbeat"></i> MediPredict</h3>
+                    <p>India's most trusted NEET college predictor</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MediPredict. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
