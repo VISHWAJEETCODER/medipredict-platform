@@ -1,0 +1,51 @@
+college_name,state,type,fees,seats,cutoff_gen,cutoff_obc,cutoff_sc,cutoff_st,cutoff_ews
+AIIMS Delhi,Delhi,Central Government,1620,125,50,150,500,1200,80
+AIIMS Bhopal,Madhya Pradesh,Central Government,5856,100,582,1377,9558,26154,1276
+AIIMS Jodhpur,Rajasthan,Central Government,5856,100,536,1109,8379,20979,1141
+AIIMS Patna,Bihar,Central Government,5856,100,1467,2205,28646,47065,2506
+AIIMS Raipur,Chhattisgarh,Central Government,5856,100,1184,2046,20436,36802,1974
+AIIMS Rishikesh,Uttarakhand,Central Government,5856,100,834,1717,11765,30456,1551
+AIIMS Bhubaneswar,Odisha,Central Government,5856,100,564,1336,7825,25410,1217
+Maulana Azad Medical College,Delhi,State Government,4445,250,397,1225,3171,6500,321
+Lady Hardinge Medical College,Delhi,State Government,4445,142,489,1124,9328,18000,1620
+UCMS Delhi,Delhi,State Government,4445,200,306,806,2855,6716,440
+VMMC Safdarjung Hospital,Delhi,Central Government,37500,150,483,4856,11442,20000,333
+Grant Medical College Mumbai,Maharashtra,State Government,109600,260,1500,3500,8000,15000,2000
+Seth GS Medical College Mumbai,Maharashtra,State Government,138350,250,1800,4000,9000,18000,2500
+Lokmanya Tilak Medical College Mumbai,Maharashtra,State Government,138350,180,2200,5000,12000,25000,3000
+BJ Medical College Pune,Maharashtra,State Government,109600,200,2500,5500,13000,28000,3500
+Indira Gandhi Medical College Nagpur,Maharashtra,State Government,109600,150,3000,6500,15000,32000,4000
+Bangalore Medical College,Karnataka,State Government,67700,250,1547,3500,9000,20000,2500
+Mysore Medical College,Karnataka,State Government,67700,200,2000,4500,11000,25000,3000
+St Johns Medical College Bangalore,Karnataka,Private,788105,150,5000,12000,25000,45000,8000
+Kasturba Medical College Manipal,Karnataka,Deemed University,1780000,250,46251,60000,80000,120000,50000
+Kasturba Medical College Mangalore,Karnataka,Deemed University,1780000,200,48000,62000,85000,125000,52000
+Christian Medical College Vellore,Tamil Nadu,Private,552830,100,234,2641,6397,12000,400
+Madras Medical College Chennai,Tamil Nadu,State Government,18073,250,755,1342,15478,41951,1200
+Stanley Medical College Chennai,Tamil Nadu,State Government,18073,200,1200,2500,18000,45000,2000
+Coimbatore Medical College,Tamil Nadu,State Government,18073,150,1800,3500,22000,50000,2800
+PSG Institute Coimbatore,Tamil Nadu,Private,450000,150,8000,18000,35000,65000,12000
+JIPMER Puducherry,Puducherry,Central Government,14910,200,591,3630,11584,25000,1350
+BHU Institute Varanasi,Uttar Pradesh,Central Government,13410,140,1648,15479,29221,55000,1469
+Aligarh Muslim University,Uttar Pradesh,Central Government,45000,150,2772,8000,22000,48000,4000
+AMU Jawaharlal Nehru Medical College,Uttar Pradesh,Central Government,45000,100,3000,8500,23000,50000,4500
+King Georges Medical University Lucknow,Uttar Pradesh,State Government,54600,250,1968,22976,51187,75000,1925
+MLN Medical College Allahabad,Uttar Pradesh,State Government,54600,150,3500,9000,25000,55000,5000
+Institute of Medical Sciences BHU,Uttar Pradesh,Central Government,13410,170,1648,4500,15000,35000,2500
+SMS Medical College Jaipur,Rajasthan,State Government,45000,250,865,1427,24393,31012,1413
+RNT Medical College Udaipur,Rajasthan,State Government,45000,150,2000,4000,28000,40000,3000
+SN Medical College Jodhpur,Rajasthan,State Government,45000,150,2200,4500,30000,45000,3500
+Medical College Kolkata,West Bengal,State Government,9000,250,2140,5000,18000,42000,3500
+RG Kar Medical College Kolkata,West Bengal,State Government,9000,200,2500,5500,20000,45000,4000
+IPGMER Kolkata,West Bengal,State Government,20000,80,2435,6000,22000,48000,4500
+Government Medical College Thiruvananthapuram,Kerala,State Government,27580,200,3141,7000,25000,55000,5000
+Government Medical College Kozhikode,Kerala,State Government,27580,150,3500,7500,28000,60000,5500
+Government Medical College Kottayam,Kerala,State Government,27580,150,3800,8000,30000,65000,6000
+Osmania Medical College Hyderabad,Telangana,State Government,30000,250,5440,12000,32000,70000,8000
+Gandhi Medical College Secunderabad,Telangana,State Government,30000,200,6000,13000,35000,75000,9000
+Andhra Medical College Visakhapatnam,Andhra Pradesh,State Government,35000,200,4500,10000,28000,65000,7000
+BJ Medical College Ahmedabad,Gujarat,State Government,25000,250,741,2000,12000,30000,1500
+Government Medical College Surat,Gujarat,State Government,25000,150,2000,4500,15000,35000,3000
+Government Medical College Chandigarh,Chandigarh,Central Government,25000,150,323,1200,6000,18000,800
+Goa Medical College,Goa,State Government,115000,150,3000,7000,22000,50000,5000
+Patna Medical College,Bihar,State Government,48000,150,5000,12000,35000,80000,8000
